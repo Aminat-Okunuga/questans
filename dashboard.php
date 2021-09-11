@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include_once 'db_conn.php';
+include_once 'model/db_conn.php';
 
 if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
@@ -12,7 +12,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 <html>
 <head>
 	<title>SIGN UP</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     <div><a href="logout.php">Logout</a></div>

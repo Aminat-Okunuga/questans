@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include_once 'db_conn.php';
+include_once 'model/db_conn.php';
 
 if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
     $user_id = $_SESSION['id'];
@@ -16,7 +16,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 <html>
 <head>
 	<title>SIGN UP</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     

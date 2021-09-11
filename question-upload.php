@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include "db_conn.php";
+include_once 'model/db_conn.php';
 
 if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
